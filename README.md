@@ -1,4 +1,4 @@
-# LING573_HUE-Human-Understanding-and-Empathy
+# LING 573 Project: Predicting Human Empathy and Emotion
 
 This is the main readme for the project.
 
