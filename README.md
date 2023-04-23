@@ -16,7 +16,7 @@ sh Anaconda3-2021.11-Linux-x86_64.sh
 ### To reproduce the results and scoring:
 The following steps will run the inference to produce the results files, and generate the evaluation scores for the best peforming model.
 
-1. Clone the repo to your local directory on Patas
+1. Clone this GitHub repo to your local directory on Patas
 1. Set executable permissions for `D2.cmd` and `D2_run.sh` by using these commands
     `chmod +x D2.cmd`
     `chmod +x D2_run.sh`
