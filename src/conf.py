@@ -24,6 +24,14 @@ dev_data_with_embedding = './data/dev_data_with_embedding_text-embedding-ada-002
 model_nn_empathy_save_path = './models/model_nn_empathy_text-embedding-ada-002_advanced_lexicon.pth'
 model_nn_distress_save_path = './models/model_nn_distress_text-embedding-ada-002_advanced_lexicon.pth'
 
+#Lexicon paths 
+nrc_emotion_path = "./data/lexicons/NRC-Emotion-Lexicon-Wordlevel-v0.92.txt"
+nrc_vad_path = "./data/lexicons/NRC-VAD-Lexicon.txt"
+mpqa_path = "./data/lexicons/subjclueslen1-HLTEMNLP05.tff"
+polarity_path = "./data/lexicons/polarity_shifters.csv"
+dataset_path = './data/'
+rescale_param_path = './data/rescale_param_dict'
+
 # outputs_d2_empathy_path = './outputs/D2/d2_outputs_empathy.tsv'
 # outputs_d2_distress_path = './outputs/D2/d2_outputs_distress.tsv'
 # scores_d2_path = './results/D2_scores.out'
