@@ -22,6 +22,7 @@ The following steps will run the inference to produce the results files, and gen
     `chmod +x D3_run.sh`
 1. Run the shell script `D3_run.sh`
 
+Note: Please run the script only on Patas and not using Condor jobs. Condor seems to have an active issue with conda environments.
 
 ## Deliverable D#2
 
