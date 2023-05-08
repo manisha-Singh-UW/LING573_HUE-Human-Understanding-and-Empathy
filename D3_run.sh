@@ -1,6 +1,6 @@
 #!/bin/sh
 source ~/anaconda3/etc/profile.d/conda.sh
-conda activate /dropbox/22-23/575j/env # the environment from Ling 575j can be reused for this shell file
+conda activate /nopt/dropbox/22-23/575j/env # the environment from Ling 575j can be reused for this shell file
 
 # preprocessing is not requried on patas / condor since the embedding files have been provided
 # python src/preprocess.py
