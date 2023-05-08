@@ -18,11 +18,11 @@ The following steps will run the inference to produce the results files, and gen
 
 1. Clone this GitHub repo to your local directory on Patas
 1. Set executable permissions for `D2.cmd` and `D2_run.sh` by using these commands
-    `chmod +x D3.cmd`
+    `chmod +x D3.cmd` and 
     `chmod +x D3_run.sh`
 1. Run the shell script `D3_run.sh`
 
-Note: Please run the script only on Patas and not using Condor jobs. Condor seems to have an active issue with conda environments.
+Note: The code can also be run on Condor by using `condor_submit D3.cmd`
 
 ## Deliverable D#2
 
