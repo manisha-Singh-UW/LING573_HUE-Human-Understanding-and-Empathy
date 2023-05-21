@@ -1,0 +1,13 @@
+Ensemble:
+MiniLM lexicon SVR poly	 1
+MiniLM lexicon SVR rbf	 1
+MiniLM lexicon NN	 1
+mpnet lexicon SVR poly	 1
+mpnet lexicon SVR rbf	 1
+mpnet lexicon NN	 1
+roberta lexicon SVR poly	 1
+roberta lexicon SVR rbf	 1
+roberta lexicon NN	 1
+ada lexicon SVR poly	 1
+ada lexicon SVR rbf	 1
+ada lexicon NN	 1

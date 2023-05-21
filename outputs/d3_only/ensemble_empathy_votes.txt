@@ -1,0 +1,5 @@
+Ensemble:
+MiniLM lexicon NN	 1
+mpnet lexicon NN	 1
+roberta lexicon NN	 1
+ada lexicon NN	 1

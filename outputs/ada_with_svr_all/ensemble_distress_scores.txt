@@ -1,0 +1,6 @@
+ensemble	0.46817983174923283
+ada lexicon SVR linear	0.4607282293089482
+ada lexicon SVR poly	0.46891108668437476
+ada lexicon SVR rbf	0.47310552439452286
+ada lexicon SVR sigmoid	0.4584193293617966
+ada lexicon NN	0.4562079097639428

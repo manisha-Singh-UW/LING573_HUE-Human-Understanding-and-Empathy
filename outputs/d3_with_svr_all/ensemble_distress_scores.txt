@@ -1,0 +1,21 @@
+ensemble	0.4509491675687752
+MiniLM lexicon SVR linear	0.3602811189825817
+MiniLM lexicon SVR poly	0.3237336442364831
+MiniLM lexicon SVR rbf	0.34834900957321585
+MiniLM lexicon SVR sigmoid	0.36974355808839754
+MiniLM lexicon NN	0.33408516657727083
+mpnet lexicon SVR linear	0.39785697301318157
+mpnet lexicon SVR poly	0.3581322240925658
+mpnet lexicon SVR rbf	0.3927952651142143
+mpnet lexicon SVR sigmoid	0.3704083656772675
+mpnet lexicon NN	0.3505716910710806
+roberta lexicon SVR linear	0.38169474373891266
+roberta lexicon SVR poly	0.38049765171558964
+roberta lexicon SVR rbf	0.39697862333993167
+roberta lexicon SVR sigmoid	0.3654371638579961
+roberta lexicon NN	0.34626910617159684
+ada lexicon SVR linear	0.4607282293089482
+ada lexicon SVR poly	0.46891108668437476
+ada lexicon SVR rbf	0.47310552439452286
+ada lexicon SVR sigmoid	0.4584193293617966
+ada lexicon NN	0.4562079097639428

@@ -1,0 +1,4 @@
+ensemble	0.4878775752376444
+ada lexicon SVR poly	0.4858825107428421
+ada lexicon SVR rbf	0.48018446727972386
+ada lexicon NN	0.4810600845701087
