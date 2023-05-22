@@ -30,6 +30,14 @@ Here are the steps to obtain the scores for the evaltest results:
 3. Submit the predictions.zip file to the competition at the following location: https://codalab.lisn.upsaclay.fr/competitions/11167#participate
 4. Once processed, the scores will be available on the 'Submit/View Results' section of the 'Participate' page.
 
+EvalTest for the Primary Task from WASSA 2022:
+<img width="981" alt="Codalab_D3_Leaderboard_v2" src="https://github.com/manisha-Singh-UW/LING573_HUE-Human-Understanding-and-Empathy/assets/11152321/541eb639-6a67-40e4-b5af-032fff2b8dd3">
+
+
+EvalTest for the Adaptation Task from WASSA 2023:
+<img width="981" alt="D4_submission_v1" src="https://github.com/manisha-Singh-UW/LING573_HUE-Human-Understanding-and-Empathy/assets/11152321/07ab0e48-0a7d-4ce4-9464-fa3e2b6c0043">
+
+
 ## Deliverable D#3
 
 ### Prerequisites:
