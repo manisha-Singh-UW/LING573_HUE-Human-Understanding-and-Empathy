@@ -1,0 +1,4 @@
+Ensemble:
+ada lexicon SVR poly	 1
+ada lexicon SVR rbf	 1
+ada lexicon NN	 1
