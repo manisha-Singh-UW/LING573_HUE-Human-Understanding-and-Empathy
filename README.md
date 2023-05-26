@@ -39,6 +39,17 @@ EvalTest for the Adaptation Task from WASSA 2023:
 https://codalab.lisn.upsaclay.fr/competitions/11167#results
 <img width="981" alt="D4_submission_v1" src="https://github.com/manisha-Singh-UW/LING573_HUE-Human-Understanding-and-Empathy/assets/11152321/07ab0e48-0a7d-4ce4-9464-fa3e2b6c0043">
 
+### To reproduce the results and scoring for the Primary Task:
+The following steps will run the inference to produce the output files for devtest and evaltest. The evaluation scores for the devtest are also generated using these steps below.
+
+1. Clone this GitHub repo to your local directory on Patas
+1. Set executable permissions for `D4_primary.cmd` and `D4_primary_run.sh` by using these commands
+    `chmod +x D4_primary.cmd` and 
+    `chmod +x D4_primary_run.sh`
+1. Run the shell script `D4_primary_run.sh`
+
+Note: The code can also be run on Condor by using `condor_submit D4_primary.cmd`
+
 
 ## Deliverable D#3
 
