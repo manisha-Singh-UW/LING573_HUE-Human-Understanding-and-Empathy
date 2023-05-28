@@ -23,8 +23,8 @@ import utils
 
 
 class conf:
-    adaptation_dev_data = './data/d4_dev_modeling_df.pkl.bz2'
-    adaptation_test_data = './data/d4_test_modeling_df.pkl.bz2'
+    adaptation_dev_data = './data/d4_dev_modeling_df.tsv.bz2'
+    adaptation_test_data = './data/d4_test_modeling_df.tsv.bz2'
     adaptation_models = {
         'EmotionalPolarity': './models/d4_model_nn_EmotionalPolarity_text-embedding-ada-002.pth',
         'Emotion': './models/d4_model_nn_Emotion_text-embedding-ada-002.pth',
@@ -41,6 +41,7 @@ class conf:
         'Empathy': './outputs/D4/adaptation/evaltest/d4_evaltest_outputs_Empathy.tsv',
     }
     d4_dev_parts_source_dir = './data/d4_dev_parts'
+    d4_test_parts_source_dir = './data/d4_test_parts'
 
 
 class AdvancedDropout(Module):
@@ -130,9 +131,13 @@ if __name__ == '__main__':
     utils.setup_logging(log_filename='log_d4_adaptation_inference')
     logging.info('**** starting d4 adaptation inference logging ****')
 
-    # join the parts of the dev_dataset
-    split_size = 20 * 1024 * 1024  # 20MB
-    join(source_dir=conf.d4_dev_parts_source_dir, dest_file=conf.adaptation_dev_data, read_size=split_size)
+    join_parts = [(conf.adaptation_dev_data, conf.d4_dev_parts_source_dir), (conf.adaptation_test_data, conf.d4_test_parts_source_dir)]
+    for dest_file, parts_dir in join_parts:
+        if not Path(dest_file).exists():
+            # join the parts of the dev_dataset
+            logging.info(f'joining: {join_parts} -> {dest_file}')
+            split_size = 20 * 1024 * 1024  # 20MB
+            join(source_dir=parts_dir, dest_file=dest_file, read_size=split_size)
 
     embedding_vector_length = 1584  # includes 1536 original features and 48 additional lexical features
 
@@ -144,7 +149,7 @@ if __name__ == '__main__':
     embedding_vector_length = len(emb_columns)  # the final length is a concatenation of three embeddings
 
     # process dev data and associated outputs
-    dev_modeling_df = pd.read_pickle(conf.adaptation_dev_data)
+    dev_modeling_df = pd.read_csv(conf.adaptation_dev_data, sep='\t')
 
     logging.info('Dev DataFrame')
     logging.info(f'\n{dev_modeling_df}')
@@ -170,7 +175,7 @@ if __name__ == '__main__':
         logging.info(f'Saving output: {output_file}')
 
     # process dev data and associated outputs
-    test_modeling_df = pd.read_pickle(conf.adaptation_test_data)
+    test_modeling_df = pd.read_csv(conf.adaptation_test_data, sep='\t')
 
     logging.info('Test DataFrame')
     logging.info(f'\n{test_modeling_df}')
@@ -189,7 +194,7 @@ if __name__ == '__main__':
         output_file = conf.adaptation_evaltest_outputs[target_feature]
         outputs_dir = Path(output_file).parent
         if not outputs_dir.exists():
-            outputs_dir.mkdir(parents=True)
+            outputs_dir.mkdir(parents=True, exist_ok=True)
 
         test_pred_df = pd.DataFrame(y_test_pred)
         test_pred_df.to_csv(output_file, sep='\t', index=False, header=[f'{target_feature}_Predictions'])
