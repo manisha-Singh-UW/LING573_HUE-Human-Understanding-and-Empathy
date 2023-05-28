@@ -6,6 +6,7 @@ import ensemble_utils as eu
 
 from sklearn.svm import SVR
 from torch import nn
+from pathlib import Path
 import warnings
 import sys
 import pickle
@@ -76,7 +77,11 @@ if __name__ == '__main__':
     outfile_prefix = f'{outfile_prefix}_{"empathy" if empathy == True else "distress"}_' 
     
     #output file for each model's predictions on the test set
-    model_prediction_writer = open(outfile_prefix+'predictions.txt', 'w', encoding='utf-8')
+    predictions_file = outfile_prefix+'predictions.txt'
+    outputs_dir = Path(predictions_file).parent
+    if not outputs_dir.exists(): #make folders if they don't exist
+        outputs_dir.mkdir(parents=True)
+    model_prediction_writer = open(predictions_file, 'w', encoding='utf-8')
     
     #output file for the ensemble's predictions on the test set
     ensemble_prediction_writer = open(outfile_prefix+'prediction.txt', 'w', encoding='utf-8')

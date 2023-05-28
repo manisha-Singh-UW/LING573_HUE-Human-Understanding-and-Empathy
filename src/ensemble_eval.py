@@ -2,6 +2,7 @@ from ensemble_utils import load_gold_labels
 import ensemble_utils as eu
 
 from scipy import stats
+from pathlib import Path
 import sys
 
 def score(gold, predicted):
@@ -27,6 +28,11 @@ def score_ensemble(outputs_prefix, results_prefix, empathy_gold, distress_gold):
     empathy_score = score(empathy_gold, empathy_prediction)
     distress_score = score(distress_gold, distress_prediction)
     mean_score = (empathy_score + distress_score) / 2
+    
+    #make folders for results file if they don't exist
+    outputs_dir = Path(output_file).parent
+    if not outputs_dir.exists():
+        outputs_dir.mkdir(parents=True)
     
     with open(output_file, 'w', encoding='utf-8') as writer:
         writer.write(f'Pearson correlation for Empathy: {empathy_score}\n')
