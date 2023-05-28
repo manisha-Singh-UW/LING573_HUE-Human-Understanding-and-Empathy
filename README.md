@@ -22,24 +22,21 @@ The following steps will run the inference to produce the output files for devte
     `chmod +x D4_run.sh`
 1. Run the shell script `D4_run.sh`
 
-Note: The code can also be run on Condor by using `condor_submit D4.cmd`
+Notes: 
+- The code can also be run on Condor by using `condor_submit D4.cmd`
+- Depending on the performance of the computer where the code is run, the execution can take around five minutes. 
 
 Here are the steps to obtain the scores for the evaltest results:
 1. The predictions.zip file has been created using the outputs of the evaltest. The contents of this file are according to the specifications of the WASSA 2023 shared task for the CONV subtask, as described at https://codalab.lisn.upsaclay.fr/competitions/11167#learn_the_details-submission-format
-2. Please create a WASSA account and register for the competition at the link above.
+2. Please create a CodaLab account and register for the competition at the link above.
 3. Submit the predictions.zip file to the competition at the following location: https://codalab.lisn.upsaclay.fr/competitions/11167#participate
 4. Once processed, the scores will be available on the 'Submit/View Results' section of the 'Participate' page.
-
-EvalTest for the Primary Task from WASSA 2022:
-https://codalab.lisn.upsaclay.fr/competitions/834#results
-<img width="981" alt="Codalab_D3_Leaderboard_v2" src="https://github.com/manisha-Singh-UW/LING573_HUE-Human-Understanding-and-Empathy/assets/11152321/541eb639-6a67-40e4-b5af-032fff2b8dd3">
-
 
 EvalTest for the Adaptation Task from WASSA 2023:
 https://codalab.lisn.upsaclay.fr/competitions/11167#results
 <img width="981" alt="D4_submission_v1" src="https://github.com/manisha-Singh-UW/LING573_HUE-Human-Understanding-and-Empathy/assets/11152321/07ab0e48-0a7d-4ce4-9464-fa3e2b6c0043">
 
-### To reproduce the results and scoring for the Primary Task:
+### To reproduce the results and scoring for the D#4 Primary Task:
 The following steps will run the inference to produce the output files for devtest and evaltest. The evaluation scores for the devtest are also generated using these steps below.
 
 1. Clone this GitHub repo to your local directory on Patas
@@ -49,6 +46,16 @@ The following steps will run the inference to produce the output files for devte
 1. Run the shell script `D4_primary_run.sh`
 
 Note: The code can also be run on Condor by using `condor_submit D4_primary.cmd`
+
+Here are the steps to obtain the scores for the evaltest results:
+1. The predictions.zip file has been created using the outputs of the evaltest. The contents of this file are according to the specifications of the WASSA 2022 shared task for the EMP subtask, as described at https://codalab.lisn.upsaclay.fr/competitions/834#learn_the_details-submission-format
+2. Please create a CodaLab account and register for the competition at the link above.
+3. Submit the predictions.zip file to the competition at the following location: https://codalab.lisn.upsaclay.fr/competitions/834#participate
+4. Once processed, the scores will be available on the 'Submit/View Results' section of the 'Participate' page.
+
+EvalTest for the Primary Task from WASSA 2022:
+https://codalab.lisn.upsaclay.fr/competitions/834#results
+<img width="1006" alt="Codalab_D3_Leaderboard_v4" src="https://github.com/manisha-Singh-UW/LING573_HUE-Human-Understanding-and-Empathy/assets/11152321/d6f119a5-48de-4191-acc7-00b86d5fce03">
 
 
 ## Deliverable D#3
