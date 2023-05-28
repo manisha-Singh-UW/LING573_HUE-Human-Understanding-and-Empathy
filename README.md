@@ -34,6 +34,7 @@ Here are the steps to obtain the scores for the evaltest results:
 
 EvalTest for the Adaptation Task from WASSA 2023:
 https://codalab.lisn.upsaclay.fr/competitions/11167#results
+
 Here is the screenshot from the leaderboard for the shared task. The highlighted row shows the results of the evaltest.
 <img width="981" alt="D4_submission_v1" src="https://github.com/manisha-Singh-UW/LING573_HUE-Human-Understanding-and-Empathy/assets/11152321/07ab0e48-0a7d-4ce4-9464-fa3e2b6c0043">
 
@@ -56,6 +57,7 @@ Here are the steps to obtain the scores for the evaltest results:
 
 EvalTest for the Primary Task from WASSA 2022:
 https://codalab.lisn.upsaclay.fr/competitions/834#results
+
 Here is the screenshot from the leaderboard for the shared task. The highlighted row shows the results of the evaltest.
 <img width="1006" alt="Codalab_D3_Leaderboard_v4" src="https://github.com/manisha-Singh-UW/LING573_HUE-Human-Understanding-and-Empathy/assets/11152321/d6f119a5-48de-4191-acc7-00b86d5fce03">
 
